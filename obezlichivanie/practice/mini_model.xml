@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2014/CIM-schema-cim16#" xmlns:me="http://monitel.com/2014/schema-cim16#">
+  <cim:SubGeographicalRegion rdf:about="#_a1000000-0000-4000-8000-000000000001">
+    <cim:IdentifiedObject.name>Koulikoro District</cim:IdentifiedObject.name>
+  </cim:SubGeographicalRegion>
+  <cim:BaseVoltage rdf:about="#_a1000000-0000-4000-8000-000000000002">
+    <cim:IdentifiedObject.name>35 kV</cim:IdentifiedObject.name>
+    <cim:BaseVoltage.nominalVoltage>35</cim:BaseVoltage.nominalVoltage>
+  </cim:BaseVoltage>
+  <cim:Substation rdf:about="#_b2000000-0000-4000-8000-000000000001">
+    <cim:IdentifiedObject.mRID>b2000000-0000-4000-8000-000000000001</cim:IdentifiedObject.mRID>
+    <cim:IdentifiedObject.name>Sub 35 kV Ngolona</cim:IdentifiedObject.name>
+    <me:IdentifiedObject.mRIDStr>sub_substation_23905460</me:IdentifiedObject.mRIDStr>
+    <cim:Substation.Region rdf:resource="#_a1000000-0000-4000-8000-000000000001" />
+  </cim:Substation>
+  <cim:Substation rdf:about="#_b2000000-0000-4000-8000-000000000002">
+    <cim:IdentifiedObject.name>Sub - 2303</cim:IdentifiedObject.name>
+    <cim:Substation.Region rdf:resource="#_a1000000-0000-4000-8000-000000000001" />
+  </cim:Substation>
+  <cim:Line rdf:about="#_c3000000-0000-4000-8000-000000000001">
+    <cim:IdentifiedObject.name>OHL 35 kV Ngolona - Kangaba</cim:IdentifiedObject.name>
+  </cim:Line>
+  <cim:ACLineSegment rdf:about="#_c3000000-0000-4000-8000-000000000002">
+    <cim:IdentifiedObject.name>OHL 35 kV Ngolona - Kangaba, pol.126</cim:IdentifiedObject.name>
+    <cim:ACLineSegment.r>0.123</cim:ACLineSegment.r>
+    <cim:Equipment.EquipmentContainer rdf:resource="#_c3000000-0000-4000-8000-000000000001" />
+    <cim:ConductingEquipment.BaseVoltage rdf:resource="#_a1000000-0000-4000-8000-000000000002" />
+    <me:ACLineSegment.sections>77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPFNlY3Rpb25zPgogIDxTZWN0aW9uIFNlcXVlbmNlTnVtYmVyPSIxIiBMZW5ndGg9IjE5NTA3IiBOYW1lcGxhdGU9ItCQ0KEtNTAvOCIgTmFtZT0i0KPRh9Cw0YHRgtC+0Log0LvQuNC90LjQuCDQvtGCINC+0L8uMzEg0LTQviDQn9ChINCi0LjQvNC+0YjQutC40L3QviIgLz4KPC9TZWN0aW9ucz4=</me:ACLineSegment.sections>
+  </cim:ACLineSegment>
+  <cim:Customer rdf:about="#_d4000000-0000-4000-8000-000000000001">
+    <cim:IdentifiedObject.name>Nikitin Vitaliy Artemov</cim:IdentifiedObject.name>
+    <cim:Customer.kind rdf:resource="http://iec.ch/TC57/2014/CIM-schema-cim16#CustomerKind.residential" />
+    <me:IdentifiedObject.mRIDStr>customer_50007178</me:IdentifiedObject.mRIDStr>
+  </cim:Customer>
+  <cim:Customer rdf:about="#_d4000000-0000-4000-8000-000000000002">
+    <cim:IdentifiedObject.name>IP ALYONINA DENIS ANTONINA</cim:IdentifiedObject.name>
+  </cim:Customer>
+  <cim:Customer rdf:about="#_d4000000-0000-4000-8000-000000000003">
+    <cim:IdentifiedObject.name>LLC UK DOM KOLRABIEVY</cim:IdentifiedObject.name>
+    <cim:Customer.kind rdf:resource="http://iec.ch/TC57/2014/CIM-schema-cim16#CustomerKind.commercialIndustrial" />
+  </cim:Customer>
+  <cim:Person rdf:about="#_e5000000-0000-4000-8000-000000000001">
+    <cim:Person.lastName>ck11user5</cim:Person.lastName>
+    <cim:IdentifiedObject.name>ck11user5</cim:IdentifiedObject.name>
+  </cim:Person>
+  <cim:UsagePoint rdf:about="#_f6000000-0000-4000-8000-000000000001">
+    <cim:IdentifiedObject.name>56389253</cim:IdentifiedObject.name>
+  </cim:UsagePoint>
+  <cim:Meter rdf:about="#_f6000000-0000-4000-8000-000000000002">
+    <cim:Asset.serialNumber>75164594</cim:Asset.serialNumber>
+    <cim:IdentifiedObject.name>52073867</cim:IdentifiedObject.name>
+    <me:IdentifiedObject.mRIDStr>meter_52073867</me:IdentifiedObject.mRIDStr>
+    <cim:EndDevice.UsagePoint rdf:resource="#_f6000000-0000-4000-8000-000000000001" />
+  </cim:Meter>
+  <cim:ServiceLocation rdf:about="#_a7000000-0000-4000-8000-000000000001">
+    <cim:Location.mainAddress>
+      <cim:StreetAddress>
+        <cim:StreetAddress.streetDetail>
+          <cim:StreetDetail>
+            <cim:StreetDetail.buildingName>h.№ 61</cim:StreetDetail.buildingName>
+            <cim:StreetDetail.name>Djikoroni Street</cim:StreetDetail.name>
+          </cim:StreetDetail>
+        </cim:StreetAddress.streetDetail>
+        <cim:StreetAddress.townDetail>
+          <cim:TownDetail>
+            <cim:TownDetail.country>Mali</cim:TownDetail.country>
+            <cim:TownDetail.stateOrProvince>Koulikoro District</cim:TownDetail.stateOrProvince>
+          </cim:TownDetail>
+        </cim:StreetAddress.townDetail>
+      </cim:StreetAddress>
+    </cim:Location.mainAddress>
+    <cim:IdentifiedObject.name>Mali, Koulikoro District, Djikoroni Street, h.№ 61</cim:IdentifiedObject.name>
+  </cim:ServiceLocation>
+  <me:AnalogMeasurementExpression rdf:about="#_a8000000-0000-4000-8000-000000000001">
+    <cim:IdentifiedObject.name>Sub 35 kV Ngolona: Сумма P</cim:IdentifiedObject.name>
+    <me:Expression.formula>abs(ПС_Ngolona_P_Ф_01)+abs(ПС_Ngolona_P_Ф_02)</me:Expression.formula>
+  </me:AnalogMeasurementExpression>
+  <me:DjRecordTemplate rdf:about="#_a9000000-0000-4000-8000-000000000001">
+    <me:DjRecordTemplate.text>В филиале СЭ (ОАО "МРСК Урала") отменен режим, тел. +7 (912) 345-67-89</me:DjRecordTemplate.text>
+  </me:DjRecordTemplate>
+</rdf:RDF>
